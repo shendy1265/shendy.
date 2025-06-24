@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shendy - Profil</title>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"  rel="stylesheet">
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    header.hero {
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #fff;
+      color: #4e54c8;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+
+    /* About Section */
+    section.about {
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    section.about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    /* Projects Section */
+    section.projects {
+      padding: 60px 20px;
+      background: #f1f1f1;
+    }
+
+    .project-list {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .project-item {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-item:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    footer.contact {
+      padding: 60px 20px;
+      background: #4e54c8;
+      color: white;
+      text-align: center;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero" data-aos="fade-up">
+    <div class="container">
+      <h1>Hai, Saya Shendy 👋</h1>
+      <p>Pengembang Web & Desainer UI/UX yang suka menciptakan sesuatu yang indah dan fungsional.</p>
+      <a href="#contact" class="btn">Kontak Saya</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about" data-aos="fade-right">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>
+        Halo! Nama saya <strong>Shendy</strong>, seorang pengembang web dan desainer antarmuka pengguna.
+        Saya menikmati membuat website yang tidak hanya terlihat keren,
+        tetapi juga mudah digunakan dan responsif di semua perangkat.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" data-aos="zoom-in">
+    <div class="container">
+      <h2>Proyek Terbaru</h2>
+      <div class="project-list">
+        <div class="project-item" data-aos="flip-left" data-aos-delay="100"><h3>Website Portofolio</h3></div>
+        <div class="project-item" data-aos="flip-left" data-aos-delay="200"><h3>Aplikasi Manajemen Tugas</h3></div>
+        <div class="project-item" data-aos="flip-left" data-aos-delay="300"><h3>Desain Landing Page</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact" class="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Hubungi Saya</h2>
+      <p>Email: shendy@example.com | Instagram: @shendy2177</p>
+    </div>
+  </footer>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+</body>
+</html>
